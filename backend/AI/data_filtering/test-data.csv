@@ -1,0 +1,16 @@
+user_id,timestamp,sender,message
+U001,05-09-2025 09:15,user,"Hey! I'm so excited today, I finally got promoted!"
+U001,05-09-2025 09:15,bot,"That's amazing, congratulations!"
+U001,05-09-2025 09:15,user,Thank you! I'm feeling so happy right now.
+U002,05-09-2025 10:20,user,"Work is okay, just the usual stuff."
+U002,05-09-2025 10:20,bot,Anything stressful happening?
+U002,05-09-2025 10:20,user,"Not really, just a normal day."
+U003,05-09-2025 11:45,user,I'm so tired� haven't slept properly in three days.
+U003,05-09-2025 11:45,bot,What's wrong? Are you okay?
+U003,05-09-2025 11:45,user,Too much work pressure and constant deadlines. Feeling anxious.
+U004,05-09-2025 12:30,user,I had a fight with my parents today.
+U004,05-09-2025 12:30,bot,"Oh no, what happened?"
+U004,05-09-2025 12:30,user,They don't understand me� feeling frustrated and alone.
+U005,05-09-2025 14:10,user,"Just watched a comedy movie, laughing so hard ??"
+U005,05-09-2025 14:10,bot,"Haha, I need to watch it too!"
+U005,05-09-2025 14:10,user,"You should, it's super funny!"
