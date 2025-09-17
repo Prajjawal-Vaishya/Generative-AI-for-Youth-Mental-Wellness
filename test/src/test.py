@@ -32,7 +32,7 @@ def test_gemini():
         gemini_model = GenerativeModel(MODEL_NAME)
 
         # Define a test prompt to send to the model.
-        prompt = "Write a short motivational quote for students facing stress."
+        prompt = "I am not feeling good"
         print(f"Sending prompt: \"{prompt}\"")
 
         # Generate content using the model.
