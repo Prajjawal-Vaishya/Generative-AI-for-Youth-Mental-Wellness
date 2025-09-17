@@ -39,7 +39,7 @@ try:
         # NOTE: Using a hardcoded key is not recommended for production.
         # This is for demonstration purposes.
         # You should replace this with your real API key!
-        genai.configure(api_key="AIzaSyBRX06w7Za7eyYAacWeWrkNMWRDd5BB0wM")
+        genai.configure(api_key="")
         print("Warning: No GEMINI_API_KEY environment variable found. Using hardcoded key.")
 except Exception as e:
     print(f"Error initializing Gemini API: {e}")
