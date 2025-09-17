@@ -4,6 +4,7 @@
 # and the Firebase Admin SDK.
 # Run these commands in your terminal:
 # pip install Flask Flask-CORS google-generativeai firebase-admin
+# pip install python-dotenv
 
 import os
 import datetime
@@ -15,6 +16,10 @@ from firebase_admin import credentials, firestore
 from google.cloud.firestore import Client as FirestoreClient
 import google.auth
 import sys
+
+# --- Environment Variable Loading ---
+from dotenv import load_dotenv
+load_dotenv() # Loads variables from a .env file into the environment
 
 # --- API & Firebase Setup ---
 # Initialize Firebase Admin SDK using the service account key
@@ -36,14 +41,12 @@ try:
         genai.configure(api_key=api_key)
         print("Gemini API configured using environment variable.")
     else:
-        # NOTE: Using a hardcoded key is not recommended for production.
-        # This is for demonstration purposes.
-        # You should replace this with your real API key!
-        genai.configure(api_key="")
-        print("Warning: No GEMINI_API_KEY environment variable found. Using hardcoded key.")
+        print("Error: The 'GEMINI_API_KEY' environment variable is not set.")
+        print("The application cannot function without it. Please set the environment variable and restart.")
+        sys.exit(1)
 except Exception as e:
     print(f"Error initializing Gemini API: {e}")
-    pass
+    sys.exit(1)
 
 # --- Flask App Initialization ---
 app = Flask(__name__, template_folder='templates')
